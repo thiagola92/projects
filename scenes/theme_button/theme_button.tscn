@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://f5fhe8j1dtbj"]
+
+[ext_resource type="Script" uid="uid://c6jroxrk8neak" path="res://scenes/theme_button/theme_button.gd" id="1_cl0ol"]
+[ext_resource type="Texture2D" uid="uid://dq5cyq3uggo8i" path="res://scenes/theme_button/sun.svg" id="1_le8fm"]
+[ext_resource type="StyleBox" uid="uid://1dvk0jdnwhbm" path="res://scenes/button_normal.tres" id="1_ng0y3"]
+
+[node name="ThemeButton" type="Button" unique_id=1138555290]
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("1_ng0y3")
+theme_override_styles/pressed = ExtResource("1_ng0y3")
+theme_override_styles/hover = ExtResource("1_ng0y3")
+theme_override_styles/hover_pressed = ExtResource("1_ng0y3")
+theme_override_styles/disabled = ExtResource("1_ng0y3")
+theme_override_styles/focus = ExtResource("1_ng0y3")
+icon = ExtResource("1_le8fm")
+script = ExtResource("1_cl0ol")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

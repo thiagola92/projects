@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c45bh02ehouee" path="res://scenes/profile.svg" id="1_45a1r"]
 [ext_resource type="Script" uid="uid://cmce1j1s5owbx" path="res://scenes/index.gd" id="1_74d6c"]
+[ext_resource type="PackedScene" uid="uid://f5fhe8j1dtbj" path="res://scenes/theme_button/theme_button.tscn" id="2_hhnvu"]
 [ext_resource type="PackedScene" uid="uid://cm6lk0185ir6b" path="res://scenes/project_description/project_description.tscn" id="2_igtc1"]
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=1176529319]
@@ -13,6 +14,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_74d6c")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2134209731]
+layout_mode = 2
+
+[node name="ThemeButton" parent="HBoxContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
+layout_mode = 2
 
 [node name="Profile" type="Button" parent="." unique_id=1015925189]
 custom_minimum_size = Vector2(200, 200)

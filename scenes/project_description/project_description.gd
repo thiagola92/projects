@@ -36,3 +36,27 @@ func _on_itchio_pressed() -> void:
 func _on_youtube_pressed() -> void:
 	if project:
 		OS.shell_open(project.youtube_url)
+
+
+func _on_github_mouse_entered() -> void:
+	%AnimationPlayer.play("GITHUB_GROW")
+
+
+func _on_github_mouse_exited() -> void:
+	%AnimationPlayer.play("RESET")
+
+
+func _on_itchio_mouse_entered() -> void:
+	%AnimationPlayer.play("ITCHIO_GROW")
+
+
+func _on_itchio_mouse_exited() -> void:
+	%AnimationPlayer.play("RESET")
+
+
+func _on_youtube_mouse_entered() -> void:
+	%AnimationPlayer.play("YOUTUBE_GROW")
+
+
+func _on_youtube_mouse_exited() -> void:
+	%AnimationPlayer.play("RESET")
