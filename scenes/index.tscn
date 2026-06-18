@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cmce1j1s5owbx" path="res://scenes/index.gd" id="1_74d6c"]
 [ext_resource type="PackedScene" uid="uid://f5fhe8j1dtbj" path="res://scenes/theme_button/theme_button.tscn" id="2_hhnvu"]
 [ext_resource type="PackedScene" uid="uid://cm6lk0185ir6b" path="res://scenes/project_description/project_description.tscn" id="2_igtc1"]
+[ext_resource type="PackedScene" uid="uid://bi0y5il1f5ewp" path="res://scenes/timeline/timeline.tscn" id="4_8s3bs"]
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=1176529319]
 anchors_preset = 15
@@ -24,11 +25,13 @@ theme_override_constants/margin_bottom = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=2134209731]
 layout_mode = 2
+alignment = 2
 
 [node name="ThemeButton" parent="MarginContainer/HBoxContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
 layout_mode = 2
 
 [node name="Profile" type="Button" parent="." unique_id=1015925189]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -38,9 +41,14 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
+[node name="Timeline" parent="." unique_id=954402233 instance=ExtResource("4_8s3bs")]
+unique_name_in_owner = true
+layout_mode = 2
+
 [node name="ProjectDescription" parent="." unique_id=26274998 instance=ExtResource("2_igtc1")]
 layout_mode = 2
 size_flags_vertical = 3
 offset_transform_enabled = true
 
 [connection signal="pressed" from="Profile" to="." method="_on_profile_pressed"]
+[connection signal="item_rect_changed" from="Timeline" to="." method="_on_timeline_item_rect_changed"]

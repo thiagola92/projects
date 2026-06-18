@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bi0y5il1f5ewp"]
+
+[ext_resource type="Script" uid="uid://bcraxvxt8i2gb" path="res://scenes/timeline/timeline.gd" id="1_likvl"]
+
+[node name="Timeline" type="ScrollContainer" unique_id=954402233]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+script = ExtResource("1_likvl")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=743349488]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_right = 64
+
+[node name="Years" type="HBoxContainer" parent="MarginContainer" unique_id=91983710]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = -4

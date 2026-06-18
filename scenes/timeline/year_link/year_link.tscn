@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://do33lh47ey0nf"]
+
+[ext_resource type="Script" uid="uid://dql3gsx6w1p2x" path="res://scenes/timeline/year_link/year_link.gd" id="1_a6bhg"]
+
+[node name="YearLink" type="ColorRect" unique_id=2129070043]
+custom_minimum_size = Vector2(100, 30)
+size_flags_vertical = 4
+color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+script = ExtResource("1_a6bhg")

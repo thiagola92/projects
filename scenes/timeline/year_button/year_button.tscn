@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://drq8ttw60kywb"]
+
+[ext_resource type="Script" uid="uid://obc7uan42ghh" path="res://scenes/timeline/year_button/year_button.gd" id="1_31emj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7f27e"]
+bg_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+border_width_left = 32
+border_width_top = 32
+border_width_right = 32
+border_width_bottom = 32
+border_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+corner_radius_top_left = 128
+corner_radius_top_right = 128
+corner_radius_bottom_right = 128
+corner_radius_bottom_left = 128
+corner_detail = 12
+
+[node name="YearButton" type="Button" unique_id=1714049292]
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_7f27e")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7f27e")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7f27e")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7f27e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7f27e")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7f27e")
+text = "2026"
+script = ExtResource("1_31emj")
