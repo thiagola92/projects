@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://d11f337c1nqqk"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_10xbs"]
+
+[resource]
+script = ExtResource("1_10xbs")
+title = "Niuxes"
+description = "Niuxes foi um trabalho para uma disciplina na faculdade, onde tinhamos que utilizar o conhecimento de [url=https://en.wikipedia.org/wiki/Android_(operating_system)]Android[/url] aprendido.  
+
+Escolhi fazer um jogo no estilo de xadrez."
+github_url = "https://github.com/thiagola92/PUC-INF1804"
+youtube_url = "https://www.youtube.com/watch?v=nRaM2R9Z8ig"
+metadata/_custom_type_script = "uid://266urdet7t4q"

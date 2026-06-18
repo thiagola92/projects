@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://cm6lk0185ir6b"]
+
+[ext_resource type="Script" uid="uid://ut357664d6y1" path="res://scenes/project_description/project_description.gd" id="1_24clu"]
+[ext_resource type="StyleBox" uid="uid://1dvk0jdnwhbm" path="res://scenes/project_description/button_normal.tres" id="2_18q1u"]
+[ext_resource type="Texture2D" uid="uid://dhr7pmc31nre0" path="res://scenes/project_description/github.svg" id="2_fhov7"]
+[ext_resource type="Resource" uid="uid://d11f337c1nqqk" path="res://projects/2014/00.tres" id="2_fnomt"]
+[ext_resource type="Texture2D" uid="uid://o2mx6idul74n" path="res://scenes/project_description/youtube.svg" id="2_mskl6"]
+[ext_resource type="Texture2D" uid="uid://djgdx1j28uxaf" path="res://scenes/project_description/itchdotio.svg" id="4_e0sfo"]
+
+[node name="ProjectDescription" type="MarginContainer" unique_id=1097220254]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+script = ExtResource("1_24clu")
+project = ExtResource("2_fnomt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1481651965]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=1604362798]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+theme_override_font_sizes/font_size = 48
+text = "Niuxes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="VBoxContainer" unique_id=1526662887]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Niuxes foi um trabalho para uma disciplina na faculdade, onde tinhamos que utilizar o conhecimento de [url=https://en.wikipedia.org/wiki/Android_(operating_system)]Android[/url] aprendido.  
+
+Escolhi fazer um jogo no estilo de xadrez."
+
+[node name="HFlowContainer" type="HFlowContainer" parent="VBoxContainer" unique_id=881448663]
+layout_mode = 2
+alignment = 1
+
+[node name="Github" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=832961123]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("2_18q1u")
+theme_override_styles/pressed = ExtResource("2_18q1u")
+theme_override_styles/hover = ExtResource("2_18q1u")
+theme_override_styles/hover_pressed = ExtResource("2_18q1u")
+theme_override_styles/disabled = ExtResource("2_18q1u")
+theme_override_styles/focus = ExtResource("2_18q1u")
+text = "Github"
+icon = ExtResource("2_fhov7")
+
+[node name="Itchio" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=1181002525]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("2_18q1u")
+theme_override_styles/pressed = ExtResource("2_18q1u")
+theme_override_styles/hover = ExtResource("2_18q1u")
+theme_override_styles/hover_pressed = ExtResource("2_18q1u")
+theme_override_styles/disabled = ExtResource("2_18q1u")
+theme_override_styles/focus = ExtResource("2_18q1u")
+text = "Itch.io"
+icon = ExtResource("4_e0sfo")
+
+[node name="Youtube" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=1999307807]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("2_18q1u")
+theme_override_styles/pressed = ExtResource("2_18q1u")
+theme_override_styles/hover = ExtResource("2_18q1u")
+theme_override_styles/hover_pressed = ExtResource("2_18q1u")
+theme_override_styles/disabled = ExtResource("2_18q1u")
+theme_override_styles/focus = ExtResource("2_18q1u")
+text = "Youtube"
+icon = ExtResource("2_mskl6")
+
+[connection signal="meta_clicked" from="VBoxContainer/Description" to="VBoxContainer" method="_on_description_meta_clicked"]
+[connection signal="pressed" from="VBoxContainer/HFlowContainer/Github" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="VBoxContainer/HFlowContainer/Itchio" to="." method="_on_itchio_pressed"]
+[connection signal="pressed" from="VBoxContainer/HFlowContainer/Youtube" to="." method="_on_youtube_pressed"]
