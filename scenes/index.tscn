@@ -15,16 +15,23 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_74d6c")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2134209731]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1108486266]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=2134209731]
 layout_mode = 2
 
-[node name="ThemeButton" parent="HBoxContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
+[node name="ThemeButton" parent="MarginContainer/HBoxContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
 layout_mode = 2
 
 [node name="Profile" type="Button" parent="." unique_id=1015925189]
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 6
 mouse_default_cursor_shape = 2
 icon = ExtResource("1_45a1r")
 flat = true

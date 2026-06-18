@@ -4,7 +4,46 @@
 [ext_resource type="Texture2D" uid="uid://dq5cyq3uggo8i" path="res://scenes/theme_button/sun.svg" id="1_le8fm"]
 [ext_resource type="StyleBox" uid="uid://1dvk0jdnwhbm" path="res://scenes/button_normal.tres" id="1_ng0y3"]
 
+[sub_resource type="Animation" id="Animation_ng0y3"]
+resource_name = "GROW"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
+}
+
+[sub_resource type="Animation" id="Animation_nux7e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aw55i"]
+_data = {
+&"GROW": SubResource("Animation_ng0y3"),
+&"RESET": SubResource("Animation_nux7e")
+}
+
 [node name="ThemeButton" type="Button" unique_id=1138555290]
+offset_transform_enabled = true
 mouse_default_cursor_shape = 2
 theme_override_styles/normal = ExtResource("1_ng0y3")
 theme_override_styles/pressed = ExtResource("1_ng0y3")
@@ -15,4 +54,10 @@ theme_override_styles/focus = ExtResource("1_ng0y3")
 icon = ExtResource("1_le8fm")
 script = ExtResource("1_cl0ol")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1445050268]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_aw55i")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="." to="." method="_on_pressed"]
