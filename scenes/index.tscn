@@ -32,7 +32,7 @@ layout_mode = 2
 
 [node name="Profile" type="Button" parent="." unique_id=1015925189]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(200, 200)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 6
 mouse_default_cursor_shape = 2

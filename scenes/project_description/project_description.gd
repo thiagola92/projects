@@ -14,6 +14,9 @@ extends Container
 func _refresh() -> void:
 	%Title.text = project.title
 	%Description.text = project.description
+	%Github.url = project.github_url
+	%Itchio.url = project.itchio_url
+	%Youtube.url = project.youtube_url
 	%Github.visible = not project.github_url.is_empty()
 	%Itchio.visible = not project.itchio_url.is_empty()
 	%Youtube.visible = not project.youtube_url.is_empty()
@@ -21,42 +24,3 @@ func _refresh() -> void:
 
 func _on_description_meta_clicked(meta: Variant) -> void:
 	OS.shell_open(str(meta))
-
-
-func _on_github_pressed() -> void:
-	if project:
-		OS.shell_open(project.github_url)
-
-
-func _on_itchio_pressed() -> void:
-	if project:
-		OS.shell_open(project.itchio_url)
-
-
-func _on_youtube_pressed() -> void:
-	if project:
-		OS.shell_open(project.youtube_url)
-
-
-func _on_github_mouse_entered() -> void:
-	%AnimationPlayer.play("GITHUB_GROW")
-
-
-func _on_github_mouse_exited() -> void:
-	%AnimationPlayer.play("RESET")
-
-
-func _on_itchio_mouse_entered() -> void:
-	%AnimationPlayer.play("ITCHIO_GROW")
-
-
-func _on_itchio_mouse_exited() -> void:
-	%AnimationPlayer.play("RESET")
-
-
-func _on_youtube_mouse_entered() -> void:
-	%AnimationPlayer.play("YOUTUBE_GROW")
-
-
-func _on_youtube_mouse_exited() -> void:
-	%AnimationPlayer.play("RESET")

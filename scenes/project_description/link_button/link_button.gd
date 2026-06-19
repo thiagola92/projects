@@ -1,15 +1,7 @@
-class_name ThemeButton
 extends Button
 
 
-const SUN := preload("res://scenes/theme_button/sun.svg")
-
-const MOON := preload("res://scenes/theme_button/moon.svg")
-
-@export var light_theme: bool = true:
-	set(l):
-		light_theme = l
-		EventBus.theme_changed.emit(light_theme)
+@export var url: String
 
 
 func _ready() -> void:
@@ -17,21 +9,25 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	light_theme = not light_theme
+	OS.shell_open(url)
 
 
 func _on_mouse_entered() -> void:
-	%AnimationPlayer.play("GROW")
+	$AnimationPlayer.play("GROW")
 
 
 func _on_mouse_exited() -> void:
-	%AnimationPlayer.play("RESET")
+	$AnimationPlayer.play("RESET")
 
 
 func _on_theme_changed(light_theme: bool) -> void:
 	if light_theme:
-		icon = SUN
-		RenderingServer.set_default_clear_color(Color.WHITE)
+		add_theme_color_override("font_color", Color.WHITE)
+		add_theme_color_override("font_focus_color", Color.WHITE)
+		add_theme_color_override("font_pressed_color", Color.WHITE)
+		add_theme_color_override("font_hover_color", Color.WHITE)
+		add_theme_color_override("font_disabled_color", Color.WHITE)
+		add_theme_color_override("font_outline_color", Color.WHITE)
 		add_theme_color_override("icon_normal_color", Color.WHITE)
 		add_theme_color_override("icon_focus_color", Color.WHITE)
 		add_theme_color_override("icon_pressed_color", Color.WHITE)
@@ -39,8 +35,12 @@ func _on_theme_changed(light_theme: bool) -> void:
 		add_theme_color_override("icon_hover_pressed_color", Color.WHITE)
 		add_theme_color_override("icon_disabled_color", Color.WHITE)
 	else:
-		icon = MOON
-		RenderingServer.set_default_clear_color(Color.html("#292929"))
+		add_theme_color_override("font_color", Color.html("#292929"))
+		add_theme_color_override("font_focus_color", Color.html("#292929"))
+		add_theme_color_override("font_pressed_color", Color.html("#292929"))
+		add_theme_color_override("font_hover_color", Color.html("#292929"))
+		add_theme_color_override("font_disabled_color", Color.html("#292929"))
+		add_theme_color_override("font_outline_color", Color.html("#292929"))
 		add_theme_color_override("icon_normal_color", Color.html("#292929"))
 		add_theme_color_override("icon_focus_color", Color.html("#292929"))
 		add_theme_color_override("icon_pressed_color", Color.html("#292929"))

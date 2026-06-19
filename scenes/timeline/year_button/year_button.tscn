@@ -4,15 +4,15 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7f27e"]
 bg_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
-border_width_left = 32
-border_width_top = 32
-border_width_right = 32
-border_width_bottom = 32
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
 border_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
-corner_radius_top_left = 128
-corner_radius_top_right = 128
-corner_radius_bottom_right = 128
-corner_radius_bottom_left = 128
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
 corner_detail = 12
 
 [node name="YearButton" type="Button" unique_id=1714049292]
@@ -24,7 +24,7 @@ theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_7f27e")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7f27e")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7f27e")

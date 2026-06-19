@@ -1,181 +1,10 @@
 [gd_scene format=3 uid="uid://cm6lk0185ir6b"]
 
 [ext_resource type="Script" uid="uid://ut357664d6y1" path="res://scenes/project_description/project_description.gd" id="1_24clu"]
-[ext_resource type="StyleBox" uid="uid://1dvk0jdnwhbm" path="res://scenes/button_normal.tres" id="2_18q1u"]
-[ext_resource type="Texture2D" uid="uid://dhr7pmc31nre0" path="res://scenes/project_description/github.svg" id="2_fhov7"]
 [ext_resource type="Resource" uid="uid://d11f337c1nqqk" path="res://projects/2014/00.tres" id="2_fnomt"]
 [ext_resource type="Texture2D" uid="uid://o2mx6idul74n" path="res://scenes/project_description/youtube.svg" id="2_mskl6"]
+[ext_resource type="PackedScene" uid="uid://djmbe2wo3a2cx" path="res://scenes/project_description/link_button/link_button.tscn" id="3_60n0y"]
 [ext_resource type="Texture2D" uid="uid://djgdx1j28uxaf" path="res://scenes/project_description/itchdotio.svg" id="4_e0sfo"]
-
-[sub_resource type="Animation" id="Animation_60n0y"]
-resource_name = "GITHUB_GROW"
-length = 0.1
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/HFlowContainer/Github:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VBoxContainer/HFlowContainer/Itchio:offset_transform_scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("VBoxContainer/HFlowContainer/Youtube:offset_transform_scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_0ufro"]
-resource_name = "ITCHIO_GROW"
-length = 0.1
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/HFlowContainer/Itchio:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VBoxContainer/HFlowContainer/Github:offset_transform_scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("VBoxContainer/HFlowContainer/Youtube:offset_transform_scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_fnomt"]
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/HFlowContainer/Github:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VBoxContainer/HFlowContainer/Itchio:offset_transform_scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("VBoxContainer/HFlowContainer/Youtube:offset_transform_scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_kjvsm"]
-resource_name = "YOUTUBE_GROW"
-length = 0.1
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/HFlowContainer/Youtube:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VBoxContainer/HFlowContainer/Github:offset_transform_scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("VBoxContainer/HFlowContainer/Itchio:offset_transform_scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0ufro"]
-_data = {
-&"GITHUB_GROW": SubResource("Animation_60n0y"),
-&"ITCHIO_GROW": SubResource("Animation_0ufro"),
-&"RESET": SubResource("Animation_fnomt"),
-&"YOUTUBE_GROW": SubResource("Animation_kjvsm")
-}
 
 [node name="ProjectDescription" type="MarginContainer" unique_id=1097220254]
 anchors_preset = 15
@@ -220,81 +49,19 @@ Escolhi fazer um jogo no estilo de xadrez."
 layout_mode = 2
 alignment = 1
 
-[node name="Github" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=832961123]
+[node name="Github" parent="VBoxContainer/HFlowContainer" unique_id=1978960755 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
 layout_mode = 2
-offset_transform_enabled = true
-mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = ExtResource("2_18q1u")
-theme_override_styles/pressed = ExtResource("2_18q1u")
-theme_override_styles/hover = ExtResource("2_18q1u")
-theme_override_styles/hover_pressed = ExtResource("2_18q1u")
-theme_override_styles/disabled = ExtResource("2_18q1u")
-theme_override_styles/focus = ExtResource("2_18q1u")
-text = "Github"
-icon = ExtResource("2_fhov7")
 
-[node name="Itchio" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=1181002525]
+[node name="Itchio" parent="VBoxContainer/HFlowContainer" unique_id=257577497 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-offset_transform_enabled = true
-mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = ExtResource("2_18q1u")
-theme_override_styles/pressed = ExtResource("2_18q1u")
-theme_override_styles/hover = ExtResource("2_18q1u")
-theme_override_styles/hover_pressed = ExtResource("2_18q1u")
-theme_override_styles/disabled = ExtResource("2_18q1u")
-theme_override_styles/focus = ExtResource("2_18q1u")
-text = "Itch.io"
 icon = ExtResource("4_e0sfo")
 
-[node name="Youtube" type="Button" parent="VBoxContainer/HFlowContainer" unique_id=1999307807]
+[node name="Youtube" parent="VBoxContainer/HFlowContainer" unique_id=966823265 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
 layout_mode = 2
-offset_transform_enabled = true
-mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = ExtResource("2_18q1u")
-theme_override_styles/pressed = ExtResource("2_18q1u")
-theme_override_styles/hover = ExtResource("2_18q1u")
-theme_override_styles/hover_pressed = ExtResource("2_18q1u")
-theme_override_styles/disabled = ExtResource("2_18q1u")
-theme_override_styles/focus = ExtResource("2_18q1u")
-text = "Youtube"
 icon = ExtResource("2_mskl6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=75796038]
-unique_name_in_owner = true
-libraries/ = SubResource("AnimationLibrary_0ufro")
-
 [connection signal="meta_clicked" from="VBoxContainer/Description" to="VBoxContainer" method="_on_description_meta_clicked"]
-[connection signal="mouse_entered" from="VBoxContainer/HFlowContainer/Github" to="." method="_on_github_mouse_entered"]
-[connection signal="mouse_exited" from="VBoxContainer/HFlowContainer/Github" to="." method="_on_github_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/HFlowContainer/Github" to="." method="_on_github_pressed"]
-[connection signal="mouse_entered" from="VBoxContainer/HFlowContainer/Itchio" to="." method="_on_itchio_mouse_entered"]
-[connection signal="mouse_exited" from="VBoxContainer/HFlowContainer/Itchio" to="." method="_on_itchio_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/HFlowContainer/Itchio" to="." method="_on_itchio_pressed"]
-[connection signal="mouse_entered" from="VBoxContainer/HFlowContainer/Youtube" to="." method="_on_youtube_mouse_entered"]
-[connection signal="mouse_exited" from="VBoxContainer/HFlowContainer/Youtube" to="." method="_on_youtube_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/HFlowContainer/Youtube" to="." method="_on_youtube_pressed"]
