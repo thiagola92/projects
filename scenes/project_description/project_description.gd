@@ -2,6 +2,8 @@
 extends Container
 
 
+const DESCRIPTION_MIN_X: int = 600
+
 @export var project: Project:
 	set(p):
 		project = p
@@ -9,6 +11,10 @@ extends Container
 		if project:
 			_refresh.call_deferred()
 			project.changed.connect(_refresh)
+
+
+func _ready() -> void:
+	get_window().size_changed.connect(_on_window_size_changed)
 
 
 func _refresh() -> void:
@@ -24,3 +30,7 @@ func _refresh() -> void:
 
 func _on_description_meta_clicked(meta: Variant) -> void:
 	OS.shell_open(str(meta))
+
+
+func _on_window_size_changed() -> void:
+	%Description.custom_minimum_size.x = min(get_window().size.x - 64, DESCRIPTION_MIN_X)

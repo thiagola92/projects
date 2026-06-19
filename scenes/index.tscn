@@ -23,12 +23,9 @@ theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=2134209731]
+[node name="ThemeButton" parent="MarginContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
 layout_mode = 2
-alignment = 2
-
-[node name="ThemeButton" parent="MarginContainer/HBoxContainer" unique_id=1138555290 instance=ExtResource("2_hhnvu")]
-layout_mode = 2
+size_flags_horizontal = 8
 
 [node name="Profile" type="Button" parent="." unique_id=1015925189]
 unique_name_in_owner = true

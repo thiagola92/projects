@@ -52,6 +52,7 @@ alignment = 1
 [node name="Github" parent="VBoxContainer/HFlowContainer" unique_id=1978960755 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
 layout_mode = 2
+url = "https://github.com/thiagola92/PUC-INF1804"
 
 [node name="Itchio" parent="VBoxContainer/HFlowContainer" unique_id=257577497 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
@@ -63,5 +64,6 @@ icon = ExtResource("4_e0sfo")
 unique_name_in_owner = true
 layout_mode = 2
 icon = ExtResource("2_mskl6")
+url = "https://www.youtube.com/watch?v=nRaM2R9Z8ig"
 
 [connection signal="meta_clicked" from="VBoxContainer/Description" to="VBoxContainer" method="_on_description_meta_clicked"]
