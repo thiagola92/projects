@@ -23,6 +23,11 @@ extends Resource
 		itchio_url = u
 		changed.emit()
 
+@export var pypi_url: String:
+	set(u):
+		pypi_url = u
+		changed.emit()
+
 @export var youtube_url: String:
 	set(u):
 		youtube_url = u

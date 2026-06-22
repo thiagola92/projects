@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://btgf3xvnmihyo"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_ptrhs"]
+
+[resource]
+script = ExtResource("1_ptrhs")
+title = "HateLag"
+description = "HateLag foi feito apenas para avaliar o quanto lag/ping pode afetar durante jogos.  "
+github_url = "https://github.com/thiagola92/PUC-DSG1412/tree/master/HateLag"
+youtube_url = "https://www.youtube.com/watch?v=zcCf5duGdDw"
+metadata/_custom_type_script = "uid://266urdet7t4q"

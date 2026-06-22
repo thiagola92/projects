@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://cuj62gqg8kk3k"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_rmi12"]
+
+[resource]
+script = ExtResource("1_rmi12")
+title = "Monga Programming Language"
+description = "Trabalho para disciplina Compiladores.  
+Desenvolver um compilador para a linguage Monga, criada para essa disciplina.  "
+github_url = "https://github.com/thiagola92/PUC-INF1715  "
+youtube_url = "https://www.youtube.com/watch?v=CrO6VSmp6bA"
+metadata/_custom_type_script = "uid://266urdet7t4q"

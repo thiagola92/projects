@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://6yfo46fp4jso"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_1cng8"]
+
+[resource]
+script = ExtResource("1_1cng8")
+title = "Simples Criptografia"
+description = "A ideia era fazer uma simples criptografia de  mensagens.  
+Eu escrevo uma mensagem no console, essa mensagem é criptografada e salva em um arquivo txt.  
+É usado um outro programa para traduzir o que está no arquivo txt.  "
+github_url = "https://github.com/thiagola92/Simples-Criptografia  "
+youtube_url = "https://www.youtube.com/watch?v=mblap1OHtRg"
+metadata/_custom_type_script = "uid://266urdet7t4q"

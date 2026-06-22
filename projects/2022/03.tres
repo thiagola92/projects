@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://dtxf718rj0aqm"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_f20be"]
+
+[resource]
+script = ExtResource("1_f20be")
+title = "la-headers"
+description = "Pacote de [url=https://en.wikipedia.org/wiki/Python_(programming_language)]Python[/url] para gerar headers.  "
+github_url = "https://github.com/thiagola92/la-headers"
+pypi_url = "https://pypi.org/project/la-headers/"
+metadata/_custom_type_script = "uid://266urdet7t4q"

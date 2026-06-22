@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://n5puy1sxicce"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_f62ys"]
+
+[resource]
+script = ExtResource("1_f62ys")
+title = "unity-scraping"
+description = "Um programa para fazer web scraping no site do Unity e criar um JSON com toda a API da Unity. Esse JSON foi utilizado para criar o projeto \"autocomplete-unity\".  "
+github_url = "https://github.com/thiagola92/unity-scraping"
+youtube_url = "https://www.youtube.com/watch?v=jXHN6Y1tC4A"
+metadata/_custom_type_script = "uid://266urdet7t4q"

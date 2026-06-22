@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bagfxmr6nh2wl"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_5odd8"]
+
+[resource]
+script = ExtResource("1_5odd8")
+title = "Mondot"
+description = "A GUI feita em [url=https://pt.wikipedia.org/wiki/Godot]Godot[/url] para interagir com [url=https://en.wikipedia.org/wiki/MongoDB]MongoDB[/url].  
+Utiliza [url=https://en.wikipedia.org/wiki/Python_(programming_language)]Python[/url] para fazer buscas no banco.  "
+github_url = "https://github.com/thiagola92/Mondot"
+youtube_url = "https://www.youtube.com/watch?v=OlV9N12_UxE"
+metadata/_custom_type_script = "uid://266urdet7t4q"

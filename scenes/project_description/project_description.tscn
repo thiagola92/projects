@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://o2mx6idul74n" path="res://scenes/project_description/youtube.svg" id="2_mskl6"]
 [ext_resource type="PackedScene" uid="uid://djmbe2wo3a2cx" path="res://scenes/project_description/link_button/link_button.tscn" id="3_60n0y"]
 [ext_resource type="Texture2D" uid="uid://djgdx1j28uxaf" path="res://scenes/project_description/itchdotio.svg" id="4_e0sfo"]
+[ext_resource type="Texture2D" uid="uid://cbhgorrd0t25u" path="res://scenes/project_description/pypi.svg" id="6_60n0y"]
 
 [node name="ProjectDescription" type="MarginContainer" unique_id=1097220254]
 anchors_preset = 15
@@ -56,9 +57,14 @@ url = "https://github.com/thiagola92/PUC-INF1804"
 
 [node name="Itchio" parent="VBoxContainer/HFlowContainer" unique_id=257577497 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 icon = ExtResource("4_e0sfo")
+
+[node name="Pypi" parent="VBoxContainer/HFlowContainer" unique_id=1990323534 instance=ExtResource("3_60n0y")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "PyPI"
+icon = ExtResource("6_60n0y")
 
 [node name="Youtube" parent="VBoxContainer/HFlowContainer" unique_id=966823265 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://t3g83rf6xhcv"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_d2xwe"]
+
+[resource]
+script = ExtResource("1_d2xwe")
+title = "la-stopwatch"
+description = "Pacote de [url=https://en.wikipedia.org/wiki/Python_(programming_language)]Python[/url] para medir a quantidade de tempo passado entre marcos.  "
+github_url = "https://github.com/thiagola92/la-stopwatch "
+pypi_url = "https://pypi.org/project/la-stopwatch/"
+metadata/_custom_type_script = "uid://266urdet7t4q"

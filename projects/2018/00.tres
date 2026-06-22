@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bosuubv6ymo26"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_kdacw"]
+
+[resource]
+script = ExtResource("1_kdacw")
+title = "Tower Defense"
+description = "Tower Defense foi um trabalho para uma matéria de sistemas reativos da PUC. O objetivo é por em prática o que aprendemos em Lua (principalmente coroutines).  
+
+Escolhi fazer um jogo do gênero tower defense.  "
+github_url = "https://github.com/thiagola92/PUC-INF1805/tree/master/Trabalho-02"
+youtube_url = "https://www.youtube.com/watch?v=zklnQOOXvHU"
+metadata/_custom_type_script = "uid://266urdet7t4q"

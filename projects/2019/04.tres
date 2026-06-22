@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://eaar1cu5xcdu"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_iy0nw"]
+
+[resource]
+script = ExtResource("1_iy0nw")
+title = "autocomplete-unity"
+description = "Um pacote para o editor de texto Atom que ajuda você a completar palavras da API do Unity.  "
+github_url = "https://github.com/thiagola92/autocomplete-unity "
+youtube_url = "https://www.youtube.com/watch?v=Z66lvEhTQi4"
+metadata/_custom_type_script = "uid://266urdet7t4q"

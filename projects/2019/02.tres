@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://c3pk0nkn0x3jo"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_dxiqw"]
+
+[resource]
+script = ExtResource("1_dxiqw")
+title = "Blockchain samples"
+description = "Trabalho para a disciplina Blockchain.  
+Uma rede blockchain que controla compras e vendas de samples (áudio).  "
+github_url = "https://github.com/thiagola92/PUC-INF1305  "
+youtube_url = "https://www.youtube.com/watch?v=CuWwIHa9s8o"
+metadata/_custom_type_script = "uid://266urdet7t4q"

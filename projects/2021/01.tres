@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bocm68iu5yus5"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_ixvy2"]
+
+[resource]
+script = ExtResource("1_ixvy2")
+title = "Hacktudo 2021"
+github_url = "https://github.com/thiagola92/hacktudo-2020"
+itchio_url = "https://stephaniefay.itch.io/investmania"
+youtube_url = "https://www.youtube.com/watch?v=LS86eiSOKOA"
+metadata/_custom_type_script = "uid://266urdet7t4q"

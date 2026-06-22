@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://qoa3jtikvat4"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_22fi3"]
+
+[resource]
+script = ExtResource("1_22fi3")
+title = "GameJamPlus 2020"
+github_url = "https://github.com/thiagola92/gamejamplus-2020"
+itchio_url = "https://stephaniefay.itch.io/guar-na"
+youtube_url = "https://www.youtube.com/watch?v=8w3aPCezFyk"
+metadata/_custom_type_script = "uid://266urdet7t4q"

@@ -14,6 +14,9 @@ config/name="projects"
 run/main_scene="uid://d155nbeyafur2"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=30
+boot_splash/bg_color=Color(1, 1, 1, 0)
+boot_splash/stretch_mode=0
+boot_splash/image="uid://3ldholv1u1w3"
 config/icon="uid://c45bh02ehouee"
 
 [autoload]

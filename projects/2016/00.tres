@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bh5hw5rwshrt5"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_5qapw"]
+
+[resource]
+script = ExtResource("1_5qapw")
+title = "Get Tournaments"
+description = "Tinha uma época em que eu estava participando de muitos torneios pequenos de League of Legends. Como o site deles não tinha um filtro para busca bom, eu criei um pequeno programa (crawler) que vai pegando todos os eventos/torneios do meu interesse."
+github_url = "https://github.com/thiagola92/Get-Tournaments"
+youtube_url = "https://www.youtube.com/watch?v=8pBW87np-kc"
+metadata/_custom_type_script = "uid://266urdet7t4q"
