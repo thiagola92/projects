@@ -40,3 +40,9 @@ func _fill() -> void:
 		if dirname != dirs[-1]:
 			var l := YearLink.instantiate()
 			%Years.add_child(l)
+
+
+func _on_gui_input(event: InputEvent) -> void:
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		if event is InputEventMouseMotion:
+			scroll_horizontal -= event.relative.x

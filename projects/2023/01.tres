@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bxcwdbkhkx40m"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_uievr"]
+
+[resource]
+script = ExtResource("1_uievr")
+title = "la-catalog"
+description = "Organização criada para treinar conceitos básicos como:
+- Crawling
+- Data mining
+- Infraestrutura
+- Bancos de dados
+- Asynchronous"
+github_url = "https://github.com/la-catalog"
+metadata/_custom_type_script = "uid://266urdet7t4q"

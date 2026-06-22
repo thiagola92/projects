@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://c7ylw34n86ejg"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_1su4l"]
+
+[resource]
+script = ExtResource("1_1su4l")
+title = "Mondot Rework"
+description = "Refatoração do projeto Mondot criado em 2021."
+github_url = "https://github.com/thiagola92/Mondot"
+youtube_url = "https://www.youtube.com/watch?v=laGAwJniaUc"
+metadata/_custom_type_script = "uid://266urdet7t4q"

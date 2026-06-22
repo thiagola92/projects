@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://dogtpncj3j8tg"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_lusew"]
+
+[resource]
+script = ExtResource("1_lusew")
+title = "KennyJam 2023"
+github_url = "https://github.com/thiagola92/kennyjam-2023"
+youtube_url = "https://www.youtube.com/watch?v=Ilbuuse23sk"
+metadata/_custom_type_script = "uid://266urdet7t4q"

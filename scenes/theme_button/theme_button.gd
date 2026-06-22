@@ -6,10 +6,10 @@ const SUN := preload("res://scenes/theme_button/sun.svg")
 
 const MOON := preload("res://scenes/theme_button/moon.svg")
 
-@export var light_theme: bool = true:
+@export var is_light_theme: bool = true:
 	set(l):
-		light_theme = l
-		EventBus.theme_changed.emit(light_theme)
+		is_light_theme = l
+		EventBus.theme_changed.emit(is_light_theme)
 
 
 func _ready() -> void:
@@ -17,7 +17,7 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	light_theme = not light_theme
+	is_light_theme = not is_light_theme
 
 
 func _on_mouse_entered() -> void:

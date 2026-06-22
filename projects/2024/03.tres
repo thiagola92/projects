@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://3mkkgahu8ixj"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_fxmyc"]
+
+[resource]
+script = ExtResource("1_fxmyc")
+title = "Cotuber"
+description = "Comecei a desenvolver um PNGTuber em Godot, baseado em outras ferramentas como [url=https://olmewe.itch.io/veadotube-mini]Veadotube mini[/url] e [url=https://kaiakairos.itch.io/pngtuber-plus]PNGtuber+[/url].  "
+github_url = "https://github.com/thiagola92/cotuber"
+itchio_url = "https://thiagola92.itch.io/cotuber"
+metadata/_custom_type_script = "uid://266urdet7t4q"

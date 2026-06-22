@@ -5,5 +5,6 @@
 [node name="YearLink" type="ColorRect" unique_id=2129070043]
 custom_minimum_size = Vector2(100, 30)
 size_flags_vertical = 4
+mouse_filter = 2
 color = Color(0.20784314, 0.5176471, 0.89411765, 1)
 script = ExtResource("1_a6bhg")

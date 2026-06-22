@@ -16,6 +16,7 @@ corner_radius_bottom_left = 64
 corner_detail = 12
 
 [node name="YearButton" type="Button" unique_id=1714049292]
+mouse_filter = 1
 mouse_default_cursor_shape = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(1, 1, 1, 1)

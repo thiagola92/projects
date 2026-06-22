@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://b6o688isc5ps2"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_3yr57"]
+
+[resource]
+script = ExtResource("1_3yr57")
+title = "la-ik"
+description = "Passei um bom tempo estudando Inverse Kinematics para tentar corrigir bugs no Godot.
+
+Decidi criar um addon para ter certeza que entendi a lógica principal de IK.
+
+[url=https://github.com/godotengine/godot/pull/83397]#83397[/url]
+[url=https://github.com/godotengine/godot/pull/83330]#83330[/url]
+[url=https://github.com/godotengine/godot/pull/81544]#81544[/url]
+[url=https://github.com/godotengine/godot/pull/81051]#81051[/url]
+[url=https://github.com/godotengine/godot/pull/81048]#81048[/url]
+[url=https://github.com/godotengine/godot/pull/83330#issuecomment-1809000653]#83330#1809000653[/url]
+"
+github_url = "https://github.com/thiagola92/la-ik"
+youtube_url = "https://www.youtube.com/watch?v=42IAwWF51gE"
+metadata/_custom_type_script = "uid://266urdet7t4q"
