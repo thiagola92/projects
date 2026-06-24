@@ -24,14 +24,17 @@ project = ExtResource("2_fnomt")
 layout_mode = 2
 alignment = 1
 
-[node name="Title" type="Label" parent="VBoxContainer" unique_id=1604362798]
+[node name="Title" type="RichTextLabel" parent="VBoxContainer" unique_id=413007421]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_colors/font_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
-theme_override_font_sizes/font_size = 48
+focus_mode = 2
+theme_override_colors/default_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
+theme_override_font_sizes/normal_font_size = 48
 text = "Niuxes"
+fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
+selection_enabled = true
 
 [node name="Description" type="RichTextLabel" parent="VBoxContainer" unique_id=1526662887]
 unique_name_in_owner = true
@@ -39,12 +42,14 @@ custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+focus_mode = 2
 theme_override_colors/default_color = Color(0.20784314, 0.5176471, 0.89411765, 1)
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = "Niuxes foi um trabalho para uma disciplina na faculdade, onde tinhamos que utilizar o conhecimento de [url=https://en.wikipedia.org/wiki/Android_(operating_system)]Android[/url] aprendido.  
 
 Escolhi fazer um jogo no estilo de xadrez."
+selection_enabled = true
 
 [node name="HFlowContainer" type="HFlowContainer" parent="VBoxContainer" unique_id=881448663]
 layout_mode = 2
@@ -57,11 +62,13 @@ url = "https://github.com/thiagola92/PUC-INF1804"
 
 [node name="Itchio" parent="VBoxContainer/HFlowContainer" unique_id=257577497 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 icon = ExtResource("4_e0sfo")
 
 [node name="Pypi" parent="VBoxContainer/HFlowContainer" unique_id=1990323534 instance=ExtResource("3_60n0y")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 text = "PyPI"
 icon = ExtResource("6_60n0y")
