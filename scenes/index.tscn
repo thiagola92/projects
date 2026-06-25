@@ -48,4 +48,5 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 
 [connection signal="pressed" from="Profile" to="." method="_on_profile_pressed"]
+[connection signal="dir_selected" from="Timeline" to="." method="_on_timeline_dir_selected"]
 [connection signal="item_rect_changed" from="Timeline" to="." method="_on_timeline_item_rect_changed"]
