@@ -44,6 +44,9 @@ func _on_timeline_dir_selected(directory: String) -> void:
 	var files := dir.get_files()
 	
 	for filename in files:
+		# Exporting to web add ".remap" to files.
+		filename = filename.trim_suffix(".remap")
+		
 		var filepath := directory.path_join(filename)
 		var project := load(filepath) as Project
 		
