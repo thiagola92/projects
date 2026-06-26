@@ -5,8 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://f5fhe8j1dtbj" path="res://scenes/theme_button/theme_button.tscn" id="2_hhnvu"]
 [ext_resource type="PackedScene" uid="uid://cm6lk0185ir6b" path="res://scenes/project_description/project_description.tscn" id="2_igtc1"]
 [ext_resource type="PackedScene" uid="uid://bi0y5il1f5ewp" path="res://scenes/timeline/timeline.tscn" id="4_8s3bs"]
+[ext_resource type="StyleBox" uid="uid://1dvk0jdnwhbm" path="res://scenes/button_normal.tres" id="5_eao86"]
+[ext_resource type="Texture2D" uid="uid://hq72sc2aqwih" path="res://scenes/previous.svg" id="6_vc6rt"]
+[ext_resource type="Texture2D" uid="uid://c3q8ptuaaaet8" path="res://scenes/next.svg" id="8_tsphw"]
 
-[node name="VBoxContainer" type="VBoxContainer" unique_id=1176529319]
+[node name="Index" type="VBoxContainer" unique_id=1176529319]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -42,11 +45,54 @@ expand_icon = true
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="ProjectDescription" parent="." unique_id=26274998 instance=ExtResource("2_igtc1")]
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1683963999]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_right = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=1863658118]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Previous" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=505857564]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("5_eao86")
+theme_override_styles/pressed = ExtResource("5_eao86")
+theme_override_styles/hover = ExtResource("5_eao86")
+theme_override_styles/hover_pressed = ExtResource("5_eao86")
+theme_override_styles/disabled = ExtResource("5_eao86")
+theme_override_styles/focus = ExtResource("5_eao86")
+icon = ExtResource("6_vc6rt")
+
+[node name="ProjectDescription" parent="MarginContainer2/HBoxContainer" unique_id=26274998 instance=ExtResource("2_igtc1")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 offset_transform_enabled = true
+
+[node name="Next" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=1512205698]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = ExtResource("5_eao86")
+theme_override_styles/pressed = ExtResource("5_eao86")
+theme_override_styles/hover = ExtResource("5_eao86")
+theme_override_styles/hover_pressed = ExtResource("5_eao86")
+theme_override_styles/disabled = ExtResource("5_eao86")
+theme_override_styles/focus = ExtResource("5_eao86")
+icon = ExtResource("8_tsphw")
 
 [connection signal="pressed" from="Profile" to="." method="_on_profile_pressed"]
 [connection signal="dir_selected" from="Timeline" to="." method="_on_timeline_dir_selected"]
 [connection signal="item_rect_changed" from="Timeline" to="." method="_on_timeline_item_rect_changed"]
+[connection signal="pressed" from="MarginContainer2/HBoxContainer/Previous" to="." method="_on_previous_pressed"]
+[connection signal="pressed" from="MarginContainer2/HBoxContainer/Next" to="." method="_on_next_pressed"]

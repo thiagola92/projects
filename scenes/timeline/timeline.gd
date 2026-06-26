@@ -32,6 +32,13 @@ func _process(_delta: float) -> void:
 	_move_to_target()
 
 
+func press_first() -> void:
+	for c in %Years.get_children():
+		if c is YearButton:
+			c.pressed.emit()
+			break
+
+
 func _clear() -> void:
 	for c in %Years.get_children():
 		c.queue_free()
@@ -67,7 +74,7 @@ func _move_to_target() -> void:
 		return
 	
 	scroll_horizontal = int(lerp(scroll_horizontal, _scroll_target, 0.1))
-	
+
 
 func _on_gui_input(event: InputEvent) -> void:
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
