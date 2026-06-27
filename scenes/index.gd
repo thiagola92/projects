@@ -43,6 +43,8 @@ func _on_timeline_dir_selected(directory: String) -> void:
 	
 	var files := dir.get_files()
 	
+	files.reverse()
+	
 	for filename in files:
 		# Exporting to web add ".remap" to files.
 		filename = filename.trim_suffix(".remap")

@@ -5,7 +5,9 @@
 [resource]
 script = ExtResource("1_fxmyc")
 title = "Cotuber"
-description = "Comecei a desenvolver um PNGTuber em Godot, baseado em outras ferramentas como [url=https://olmewe.itch.io/veadotube-mini]Veadotube mini[/url] e [url=https://kaiakairos.itch.io/pngtuber-plus]PNGtuber+[/url].  "
+description = "PNGTuber básico feito no Godot.
+
+Baseado em outros PNGTubers: [url=https://olmewe.itch.io/veadotube-mini]Veadotube mini[/url] e [url=https://kaiakairos.itch.io/pngtuber-plus]PNGtuber+[/url]."
 github_url = "https://github.com/thiagola92/cotuber"
 itchio_url = "https://thiagola92.itch.io/cotuber"
 metadata/_custom_type_script = "uid://266urdet7t4q"

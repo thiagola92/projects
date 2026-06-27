@@ -5,16 +5,21 @@
 [resource]
 script = ExtResource("1_3yr57")
 title = "la-ik"
-description = "Passei um bom tempo estudando Inverse Kinematics para tentar corrigir bugs no Godot.
+description = "Godot addon para Inverse Kinematics.
 
-Decidi criar um addon para ter certeza que entendi a lógica principal de IK.
+Após encontrar bugs na IK do Godot, decidi criar este addon para estudar o assunto e conseguir entregar melhores pull requests:
+- [url=https://github.com/godotengine/godot/pull/83397]#83397[/url]
+- [url=https://github.com/godotengine/godot/pull/83330]#83330[/url]
+- [url=https://github.com/godotengine/godot/pull/81544]#81544[/url]
+- [url=https://github.com/godotengine/godot/pull/81051]#81051[/url]
+- [url=https://github.com/godotengine/godot/pull/81048]#81048[/url]
+- [url=https://github.com/godotengine/godot/pull/83330#issuecomment-1809000653]#83330#1809000653[/url].
 
-[url=https://github.com/godotengine/godot/pull/83397]#83397[/url]
-[url=https://github.com/godotengine/godot/pull/83330]#83330[/url]
-[url=https://github.com/godotengine/godot/pull/81544]#81544[/url]
-[url=https://github.com/godotengine/godot/pull/81051]#81051[/url]
-[url=https://github.com/godotengine/godot/pull/81048]#81048[/url]
-[url=https://github.com/godotengine/godot/pull/83330#issuecomment-1809000653]#83330#1809000653[/url]
+
+
+
+
+
 "
 github_url = "https://github.com/thiagola92/la-ik"
 youtube_url = "https://www.youtube.com/watch?v=42IAwWF51gE"

@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_pah6m")
 title = "zerotier-gdextension"
-description = "Após muita dor de cabeça consegui criar uma GDExtension (incompleta) do ZeroTier para o Godot.  
+description = "Godot addon para utilizar [url=https://www.zerotier.com/]ZeroTier[/url] dentro do Godot (incompleto).
 
-Embora não tenha achado nenhuma utilidade para ela por questões de licença do ZeroTier, consegui documentar o passo a passo para reproduzir a extensão.  "
+Projeto cancelado por limitações de uso pela licensa do ZeroTier."
 github_url = "https://github.com/thiagola92/zerotier-gdextension"
 metadata/_custom_type_script = "uid://266urdet7t4q"

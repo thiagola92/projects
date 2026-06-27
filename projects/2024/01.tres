@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_vcism")
 title = "la-bh"
-description = "Comecei um jogo estilo [url=https://store.steampowered.com/app/1794680/Vampire_Survivors/]Vampire Survivors[/url] (Bullet Hell, Action Roguelike) porém multiplayer.  
+description = "Protótipo de Bullet Hell/Action Roguelike.
 
-[url=https://store.steampowered.com/app/2510960/Temtem_Swarm/]Temtem Swarm[/url] foi anunciado dias depois de começar o projeto, isto me levou a largar esta ideia.  "
+Um jogo estilo [url=https://store.steampowered.com/app/1794680/Vampire_Survivors/]Vampire Survivors[/url] porém multiplayer. Infelizmente larguei a idéia após o anúncio do jogo [url=https://store.steampowered.com/app/2510960/Temtem_Swarm/]Temtem Swarm[/url]."
 youtube_url = "https://www.youtube.com/watch?v=dTNZpgxdz-E"
 metadata/_custom_type_script = "uid://266urdet7t4q"

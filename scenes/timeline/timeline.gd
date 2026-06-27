@@ -22,6 +22,8 @@ var _is_dragging: bool = false
 
 var _scroll_target: int = 0
 
+var _should_move_to_target: bool = false
+
 
 func _ready() -> void:
 	_clear()
@@ -66,11 +68,16 @@ func _fill() -> void:
 
 
 func _move_to_target() -> void:
+	if not _should_move_to_target:
+		return
+	
 	if scroll_horizontal == _scroll_target:
+		_should_move_to_target = false
 		return
 	
 	if abs(scroll_horizontal - _scroll_target) < 2:
 		scroll_horizontal = _scroll_target
+		_should_move_to_target = false
 		return
 	
 	scroll_horizontal = int(lerp(scroll_horizontal, _scroll_target, 0.1))
@@ -80,8 +87,9 @@ func _on_gui_input(event: InputEvent) -> void:
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if event is InputEventMouseMotion:
 			_is_dragging = _is_dragging or abs(event.relative.x) > SCROLL_CHECK
+			_should_move_to_target = false
 			scroll_horizontal -= event.relative.x
-			_scroll_target = scroll_horizontal
+			return
 	else:
 		_is_dragging = false
 
@@ -93,5 +101,6 @@ func _on_year_button_pressed(button: YearButton, directory: String) -> void:
 		return
 	
 	_scroll_target = int(button.position.x)
+	_should_move_to_target = true
 	
 	dir_selected.emit(directory)
