@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_ixvy2")
 title = "Hacktudo 2021"
+description = "Game jam com [url=https://github.com/lucashardman]Lucas[/url] e [url=https://github.com/stephaniefay]Stephanie[/url]"
 github_url = "https://github.com/thiagola92/hacktudo-2020"
 itchio_url = "https://stephaniefay.itch.io/investmania"
 youtube_url = "https://www.youtube.com/watch?v=LS86eiSOKOA"

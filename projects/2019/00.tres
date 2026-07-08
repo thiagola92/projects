@@ -5,8 +5,9 @@
 [resource]
 script = ExtResource("1_rmi12")
 title = "Monga Programming Language"
-description = "Trabalho para disciplina Compiladores.  
-Desenvolver um compilador para a linguage Monga, criada para essa disciplina.  "
+description = "Trabalho da faculdade para a disciplina [b]Compiladores[/b].
+
+Desenvolver um compilador para a linguagem Monga (linguagem fictícia para a disciplina)."
 github_url = "https://github.com/thiagola92/PUC-INF1715  "
 youtube_url = "https://www.youtube.com/watch?v=CrO6VSmp6bA"
 metadata/_custom_type_script = "uid://266urdet7t4q"

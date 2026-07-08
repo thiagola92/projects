@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_22fi3")
 title = "GameJamPlus 2020"
+description = "Game jam com [url=https://github.com/lucashardman]Lucas[/url] e [url=https://github.com/stephaniefay]Stephanie[/url]"
 github_url = "https://github.com/thiagola92/gamejamplus-2020"
 itchio_url = "https://stephaniefay.itch.io/guar-na"
 youtube_url = "https://www.youtube.com/watch?v=8w3aPCezFyk"

@@ -59,7 +59,7 @@ alignment = 1
 [node name="Previous" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=505857564]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 10
 size_flags_vertical = 4
 mouse_default_cursor_shape = 2
 theme_override_styles/normal = ExtResource("5_eao86")
@@ -80,7 +80,7 @@ offset_transform_enabled = true
 [node name="Next" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=1512205698]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 2
 size_flags_vertical = 4
 mouse_default_cursor_shape = 2
 theme_override_styles/normal = ExtResource("5_eao86")

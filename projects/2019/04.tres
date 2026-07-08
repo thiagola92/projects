@@ -5,7 +5,9 @@
 [resource]
 script = ExtResource("1_iy0nw")
 title = "autocomplete-unity"
-description = "Um pacote para o editor de texto Atom que ajuda você a completar palavras da API do Unity.  "
+description = "Pacote para o editor de texto [url=https://en.wikipedia.org/wiki/Atom_(text_editor)]Atom[/url].
+
+Fornece autocomplete para API da [url=https://en.wikipedia.org/wiki/Unity_(game_engine)]Unity[/url]."
 github_url = "https://github.com/thiagola92/autocomplete-unity "
 youtube_url = "https://www.youtube.com/watch?v=Z66lvEhTQi4"
 metadata/_custom_type_script = "uid://266urdet7t4q"

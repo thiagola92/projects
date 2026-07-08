@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_ptrhs")
 title = "HateLag"
-description = "HateLag foi feito apenas para avaliar o quanto lag/ping pode afetar durante jogos.  "
+description = "Jogo para avaliar o quanto lag/ping afeta jogatinas."
 github_url = "https://github.com/thiagola92/PUC-DSG1412/tree/master/HateLag"
 youtube_url = "https://www.youtube.com/watch?v=zcCf5duGdDw"
 metadata/_custom_type_script = "uid://266urdet7t4q"

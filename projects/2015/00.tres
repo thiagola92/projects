@@ -5,9 +5,7 @@
 [resource]
 script = ExtResource("1_1cng8")
 title = "Simples Criptografia"
-description = "A ideia era fazer uma simples criptografia de  mensagens.  
-Eu escrevo uma mensagem no console, essa mensagem é criptografada e salva em um arquivo txt.  
-É usado um outro programa para traduzir o que está no arquivo txt.  "
+description = "Programa para criptografar usando o método [url=https://pt.wikipedia.org/wiki/Cifra_XOR]XOR[/url] simples."
 github_url = "https://github.com/thiagola92/Simples-Criptografia  "
 youtube_url = "https://www.youtube.com/watch?v=mblap1OHtRg"
 metadata/_custom_type_script = "uid://266urdet7t4q"

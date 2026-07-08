@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_uievr")
 title = "la-catalog"
-description = "Organização criada para treinar conceitos básicos como:
+description = "Organização para treinar conceitos básicos como:
 - Crawling
 - Data mining
 - Infraestrutura

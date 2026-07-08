@@ -5,8 +5,9 @@
 [resource]
 script = ExtResource("1_h3mhw")
 title = "Projeto final"
-description = "Trabalho de conclusão de curso, Projeto Final.  
-Aplicação para armazenar arquivos localmente ou em serviços de armazenamento (Google Drive, Dropbox, ...), provendo a segurança e privacidade das pastas e arquivos.  "
+description = "Trabalho da faculdade para a disciplina [b]Projeto Final[/b] (conclusão de curso).
+
+Aplicação para armazenar arquivos localmente ou em serviços de armazenamento (Google Drive, Dropbox, ...), provendo a segurança e privacidade das pastas e arquivos."
 github_url = "https://github.com/thiagola92/PUC-INF1950  "
 youtube_url = "https://www.youtube.com/watch?v=HM2S4p2KaFY"
 metadata/_custom_type_script = "uid://266urdet7t4q"
