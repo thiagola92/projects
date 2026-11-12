@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://evtw3gxrclwg"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_ar8ip"]
+
+[resource]
+script = ExtResource("1_ar8ip")
+title = "csv-editor"
+description = "Editor de CSV desenvolvido em Godot."
+github_url = "https://github.com/thiagola92/csv-editor"
+metadata/_custom_type_script = "uid://266urdet7t4q"

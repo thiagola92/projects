@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://cjywjvpljqwwb"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_7mx38"]
+
+[resource]
+script = ExtResource("1_7mx38")
+title = "Assert Test"
+description = "Godot addon que permite testar scenes de maneira simples."
+github_url = "https://github.com/thiagola92/assert-test"
+metadata/_custom_type_script = "uid://266urdet7t4q"

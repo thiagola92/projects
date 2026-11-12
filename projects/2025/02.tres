@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bbjqm2dhe1rku"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_sk8r2"]
+
+[resource]
+script = ExtResource("1_sk8r2")
+title = "escudo"
+description = "CLI para adiministrar locks de arquivos."
+github_url = "https://github.com/thiagola92/escudo"
+metadata/_custom_type_script = "uid://266urdet7t4q"

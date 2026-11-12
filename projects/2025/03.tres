@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Project" format=3 uid="uid://bg27hqicqdbqf"]
+
+[ext_resource type="Script" uid="uid://266urdet7t4q" path="res://projects/project.gd" id="1_haxe7"]
+
+[resource]
+script = ExtResource("1_haxe7")
+title = "Discord Social SDK"
+description = "GDExtension para utilizar [url=https://discord.com/developers/social-sdk]Discord Social SDK[/url] em jogos feitos no Godot."
+github_url = "https://github.com/thiagola92/discord-social-sdk"
+metadata/_custom_type_script = "uid://266urdet7t4q"
