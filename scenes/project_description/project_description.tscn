@@ -49,6 +49,7 @@ url = "https://github.com/thiagola92/PUC-INF1804"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
+text = "Itch.io"
 icon = ExtResource("4_e0sfo")
 
 [node name="Pypi" parent="VBoxContainer/HFlowContainer" unique_id=1990323534 instance=ExtResource("3_60n0y")]
